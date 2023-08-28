@@ -1,0 +1,15 @@
+//Get status of running programs  
+ps -all >> st.txt
+
+
+  UID   PID  PPID        F CPU PRI NI       SZ    RSS WCHAN     S             ADDR TTY           TIME CMD
+  501  2855  2088     4006   0  31  0 408168720   3280 -      Ss                  0 ttys002    0:00.09 /bin/zsh -il
+  501  3429  2855     4006   0  31  0 407971424    880 -      R+                  0 ttys002    1:37.13 ./cpu Hello,World
+    0  3471  2567     4106   0  31  0 408674128   7984 -      Ss                  0 ttys003    0:00.01 login -pf satyam
+  501  3472  3471     4006   0  31  0 408693024   4640 -      S                   0 ttys003    0:00.04 -zsh
+    0  3521  3472     4106   0  31  0 408626864   1888 -      R+                  0 ttys003    0:00.01 ps -all
+  UID   PID  PPID        F CPU PRI NI       SZ    RSS WCHAN     S             ADDR TTY           TIME CMD
+  501  2855  2088     4006   0  31  0 408168720   3280 -      Ss+                 0 ttys002    0:00.09 /bin/zsh -il
+    0  3471  2567     4106   0  31  0 408674128   7984 -      Ss                  0 ttys003    0:00.01 login -pf satyam
+  501  3472  3471     4006   0  31  0 408693024   4640 -      S                   0 ttys003    0:00.04 -zsh
+    0  3560  3472     4106   0  31  0 408626864   1888 -      R+                  0 ttys003    0:00.01 ps -all
